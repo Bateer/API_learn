@@ -1,0 +1,29 @@
+creat_department:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/department/create
+  params:
+    access_token: ${access_token}
+  json:
+    name: ${name}
+    parentid: ${parentid}
+
+update_department:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/department/update
+  params:
+    access_token: ${access_token}
+  json:
+    id: ${id}
+
+del_department:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/department/delete
+  params:
+    access_token: ${access_token}
+    id: ${id}
+
+list_department:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/department/list
+  params:
+    access_token: ${access_token}
